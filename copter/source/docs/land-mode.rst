@@ -26,7 +26,7 @@ features:
 .. note::
 
     Copter will recognise that it has landed if the motors are being commanded to be at low
-    level by the vertical position controller, its climb rate remains between -20cm/s and +20cm/s, 
+    level by the vertical position controller, its vertical speed is close to zero (within ±1 m/s by default), 
     is not accelerating for one second, and other internal landing-detection checks, such as attitude-related checks, 
     are also satisfied.  It does not use the altitude to decide whether to shut off the
     motors except that the copter must also be below 10m above the home
