@@ -44,11 +44,12 @@ features:
    before settling down and turning the props off, try lowering the
    :ref:`LAND_SPD_MS<LAND_SPD_MS>` parameter a bit.
 -  If the vehicle has GPS lock the landing controller will attempt to
-   control its horizontal position but the pilot can adjust the target
-   horizontal position just as in Loiter mode.
+   control its horizontal position, but the pilot can adjust the target
+   horizontal position just as in Loiter mode, unless the 
+   :ref:LAND_REPOSITION<LAND_REPOSITION> parameter is set to 0.
 -  If the vehicle does not have GPS lock the horizontal control will be
-   as in stabilize mode so the pilot can control the roll and pitch lean
-   angle of the copter.
+   as in stabilize mode, so the pilot can control the roll and pitch lean
+   angle of the copter, unless the :ref:LAND_REPOSITION<LAND_REPOSITION> parameter is set to 0.
 
 
 .. warning::
