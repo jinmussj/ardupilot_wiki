@@ -29,8 +29,7 @@ features:
     level by the vertical position controller, its vertical speed is close to zero (within ±1 m/s by default), 
     is not accelerating for one second, and other internal landing-detection checks, such as attitude-related checks, 
     are also satisfied.  It does not use the altitude to decide whether to shut off the
-    motors except that the copter must also be below 10m above the home
-    altitude, unless a rangefinder is being used, in which case it must be within 2m of the ground.
+    motors, except that when a healthy rangefinder is being used, the copter must be within 2m of the ground.
 
 .. note:: For Traditional Heli, the low motor check in the above landing detection algorithm is replaced with a check that Collective output is below
    mid-position (controlled by the vertical position controller, ie in descent). The rotor still may be at governor speed up until Motor Interlock is removed and  disarming occurs.
