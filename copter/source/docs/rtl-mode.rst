@@ -50,16 +50,16 @@ Options (User Adjustable Parameters)
    minimum altitude the copter will move to before returning to launch.
 
    -  Set to zero to return at the current altitude.
-   -  The return altitude can be set from 1 to 8000 centimeters.
-   -  The default return altitude Default is 15 meters (1500)
+   -  The return altitude can be set from 0.3 to 3000 meters.
+   -  The default return altitude Default is 15 meters.
 
 -  :ref:`RTL_ALT_FINAL_M<RTL_ALT_FINAL_M>`: The
    altitude the copter will move to at the final stage of "Returning to
    Launch" or after completing a Mission.
 
    -  Set to zero to automatically land the copter. See :ref:`land-mode`.
-   -  The final return altitude may be adjusted from 0 to 1000
-      centimeters.
+   -  The final return altitude may be adjusted from 0 to 10
+      meters.
 
 -  :ref:`RTL_LOIT_TIME <RTL_LOIT_TIME>`:
    Time in milliseconds to hover/pause above the "Home" position before
@@ -79,7 +79,7 @@ Options (User Adjustable Parameters)
    The descent speed for the final stage of landing in centimeters per
    second.
 
-   -  The landing speed is adjustable from 20 to 200 centimeters per
+   -  The landing speed is adjustable from 0.3 to 2 meters per
       second.
 
 -  :ref:`RTL_CLIMB_MIN <RTL_CLIMB_MIN>`:
