@@ -72,8 +72,7 @@ Relay Release
     :ref:`This function is a GPIO and has limited current capabilities.<gpio-warning>`
 
 - Determine/Configure a pin to be a GPIO (see :ref:`common-gpios`).
-- Set that pin number as one of the RELAY outputs and assign that relay to the parachute function. For example, 
-for GPIO pin 51 using the first relay, set :ref:`RELAY1_PIN<RELAY1_PIN>` = 51 and :ref:`RELAY1_FUNCTION<RELAY1_FUNCTION>` = 3 (Parachute).
+- Set that pin number as one of the RELAY outputs and assign that relay to the parachute function. For example, for GPIO pin 51 using the first relay, set :ref:`RELAY1_PIN<RELAY1_PIN>` = 51 and :ref:`RELAY1_FUNCTION<RELAY1_FUNCTION>` = 3 (Parachute).
 - Since GPIOs are always set low initially during the bootloader period, to avoid accidental release, always use a release mechanism that needs a high output level to trigger and set:
 - :ref:`RELAY1_DEFAULT<RELAY1_DEFAULT>` = 1 or 2 (low or no change), which determines how RELAY1 pins is set during the post-bootloader, autopilot initialization period.
 - :ref:`CHUTE_TYPE<CHUTE_TYPE>` = 0 to release with a relay. Set the corresponding relay function parameter, such as :ref:`RELAY1_FUNCTION<RELAY1_FUNCTION>`, to 3 (Parachute) to choose which relay output is used.
